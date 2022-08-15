@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { useSession } from 'next-auth/react'
 
-import Heading from 'components/Heading'
+import Heading from 'Components/Heading'
 
 export default function NewProduct() {
   const { data: session, status } = useSession()

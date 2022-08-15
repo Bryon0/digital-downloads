@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
 
 import Link from 'next/link'
-import Heading from 'components/Heading'
+import Heading from 'Components/Heading'
 
 export default function Dashboard() {
   const { data: session, status } = useSession()
