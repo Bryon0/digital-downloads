@@ -66,6 +66,9 @@ export default function Dashboard( { products } ) {
                 <Link href={`/dashboard/product/${product.id}`}>
                   <a className='text-sm border p-2 font-bold uppercase'>Edit</a>
                 </Link>
+                <Link href={`/product/${product.id}`}>
+                  <a className='text-sm border p-2 font-bold uppercase ml-2'>View</a>
+                </Link>
               </div>
             </div>
           ))}
