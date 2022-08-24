@@ -18,8 +18,10 @@
     "next-connect": "^0.12.2",
     "nodemailer": "^6.7.8",
     "pg": "^8.7.3",
+    "raw-body": "^2.5.1",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "stripe": "^10.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
