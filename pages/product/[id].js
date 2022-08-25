@@ -51,8 +51,25 @@ export default function Product({ product }) {
               {session && (
                 <>
                   {session.user.id !== product.author.id ? (
-                    <button
+                    	<button
                       className='text-sm border p-2 font-bold uppercase'
+                      onClick={async () => {
+                        if (product.free) {
+                          await fetch('/api/download', {
+                            body: JSON.stringify({
+                              product_id: product.id,
+                            }),
+                            headers: {
+                              'Content-Type': 'application/json',
+                            },
+                            method: 'POST',
+                          })
+                    
+                          router.push('/dashboard')
+                        } else {
+                    
+                        }    
+                      }}
                     >
                       {product.free ? 'DOWNLOAD' : 'PURCHASE'}
                     </button>
